@@ -1,18 +1,9 @@
-import names from "../data/babyNamesData.json";
+import { AppHeader } from "../AppHeader";
 
 function App() {
   return (
     <div className="container">
-      {names.map((child) => (
-        <button className="names"
-          style={{
-            background: child.sex === "f" ? "magenta" : "darkgreen",
-          }}
-          key={child.id}
-        >
-          {child.name}
-        </button>
-      ))}
+      <AppHeader />
     </div>
   );
 }
